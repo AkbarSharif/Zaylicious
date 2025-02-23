@@ -95,23 +95,22 @@
     grid-row: 2;
     grid-column: 1 / 2;
   }
-  
+
   .food-image-title-chat {
     grid-row: 2;
     grid-column: 2 / 3;
   }
-  
+
   .food-image-title-juice {
     grid-row: 3;
     grid-column: 1 / 2;
   }
-
-  /**************************/
+}
+/**************************/
 /* BELOW 770px (Smaller tablets) */
 /**************************/
 
 @media (max-width: 48em) {
-
   html {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
@@ -128,9 +127,9 @@
   .Menu-container {
     margin: 0 6.4rem;
   }
-  }
+}
 
-  /**************************/
+/**************************/
 /* BELOW 544px (Phones) */
 /**************************/
 
@@ -148,31 +147,66 @@
     margin: 0 2.4rem;
   }
 
-.header-txt-h1,
-.header-txt-h2,
-.header-txt-h3,
-.header-txt-p {
-  font-weight: 500;
-  text-shadow: 2px 2px 5px rgba(187, 187, 187, 0.3);
+  .header-txt-h1,
+  .header-txt-h2,
+  .header-txt-h3,
+  .header-txt-p {
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(187, 187, 187, 0.3);
+  }
+
+  .header-txt-h1 {
+    font-size: 4.6rem;
+  }
+
+  .header-txt-h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+
+  .header-txt-h3 {
+    font-weight: 500;
+    font-size: 3rem;
+  }
+
+  .header-txt-p {
+    font-weight: 500;
+    font-size: 2.1rem;
+  }
 }
 
-.header-txt-h1 {
-  font-size: 4.6rem;
-}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
 
-.header-txt-h2 {
-  font-size: 3.2rem;
-  font-weight: 600;
-}
+@media (max-width: 24em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 58%;
+  }
 
-.header-txt-h3 {
-  font-weight: 500;
-  font-size: 3rem;
-}
+  .background-image {
+    width: 174vw;
+  }
 
-.header-txt-p {
-  font-weight: 500;
-  font-size: 2.1rem;
-}
+  .Menu-container {
+    margin: 0 0.5rem;
+  }
 
+  .header-nav {
+    padding: 0.5rem;
+    justify-content: flex-start;
+  }
+
+  .Restaurant-logo-img {
+    width: 25rem;
+    height: 8rem;
+    justify-self: flex-start;
+  }
+
+  .title-nav-ul {
+    gap: 2.6rem;
+    margin: 0 1rem;
+    font-
+  }
 }
