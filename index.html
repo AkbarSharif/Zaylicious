@@ -10,51 +10,185 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
     <link rel="icon" type="image/png" href="favicon1.png" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" />    icon for vite -->
     <title>Zaylicious</title>
   </head>
-  <body class="grid-container">
-    <div class="grid-row-1">
-      <div class="Restaurant-logo">
-        <img
-          src="/Name1-wt.png"
-          alt="Zaylicious Logo"
-          height="80"
-          width="250"
-        />
+
+  <body class="main-body">
+    <section class="hero-container">
+      <section class="header-nav container flex-row">
+        <a href="#" class="Restaurant-logo">
+          <img
+            src="/Name1-wt.png"
+            alt="Zaylicious Logo"
+            class="Restaurant-logo-img"
+          />
+        </a>
+        <div>
+          <nav class="title-nav">
+            <ul class="title-nav-ul flex-row">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Menu.html">Menu</a></li>
+              <li><a href="hero.html">Portfolio</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <a href="#" class="Restaurant-name">
+          <img
+            src="/full-nam-wt.png"
+            alt="Zaylicious Name"
+            class="Restaurant-name-img"
+          />
+        </a>
+      </section>
+
+      <section class="hero-section container">
+        <div class="hero-content flex-column">
+          <h1 class="header-txt-h1">Save food</h1>
+          <h3 class="header-txt-h2">Feed the needy</h3>
+          <div class="header-txt">
+            <p class="header-txt-p">
+              Come and indulge in the delicious flavors of our restaurant!
+            </p>
+            <p class="header-txt-p">
+              Try our mouthwatering dishes and experience a taste you’ll love!
+            </p>
+          </div>
+          <button
+            class="Menu-button"
+            onclick="window.open('Menu.html', '_blank');"
+          >
+            ORDER NOW
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <section class="Menu-container container">
+      <div class="Menu-content">
+        <h1 class="header-txt-h1 font-gray">Menu</h1>
+        <h3 class="header-txt-h2 font-gray">
+          Choose from the wide range of dishes
+        </h3>
+        <h2 class="header-txt-h3 font-gray">
+          Indian, Chinese, Arabian, Chat, Fresh Juice
+        </h2>
       </div>
-      <div>
-        <nav class="title-nav">
-          <ul class="title-nav-ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Menu.html">Menu</a></li>
-            <li><a href="hero.html">Portfolio</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-        </nav>
+
+      <div class="cuisine-images-main grid">
+        <tit1 class="food-image-title-india">
+          <div class="india-title">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M240,112a56.06,56.06,0,0,0-56-56c-1.77,0-3.54.1-5.29.26a56,56,0,0,0-101.42,0C75.54,56.1,73.77,56,72,56A56,56,0,0,0,48,162.59V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V162.59A56.09,56.09,0,0,0,240,112Zm-48,96H64V167.42a55.49,55.49,0,0,0,8,.58H184a55.49,55.49,0,0,0,8-.58Zm-8-56H170.25l5.51-22.06a8,8,0,0,0-15.52-3.88L153.75,152H136V128a8,8,0,0,0-16,0v24H102.25l-6.49-25.94a8,8,0,1,0-15.52,3.88L85.75,152H72a40,40,0,0,1,0-80l.58,0A55.21,55.21,0,0,0,72,80a8,8,0,0,0,16,0,40,40,0,0,1,80,0,8,8,0,0,0,16,0,55.21,55.21,0,0,0-.58-8l.58,0a40,40,0,0,1,0,80Z"
+              ></path>
+            </svg>
+            <h3 class="food-image-text">Indian</h3>
+          </div>
+          <a href="https://www.example.com" class="image-link">
+            <img src="/indian.jpg" alt="Indian" class="cuisine-image-india" />
+          </a>
+        </tit1>
+
+        <tit1 class="food-image-title-china">
+          <div class="china-title">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M240,112a56.06,56.06,0,0,0-56-56c-1.77,0-3.54.1-5.29.26a56,56,0,0,0-101.42,0C75.54,56.1,73.77,56,72,56A56,56,0,0,0,48,162.59V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V162.59A56.09,56.09,0,0,0,240,112Zm-48,96H64V167.42a55.49,55.49,0,0,0,8,.58H184a55.49,55.49,0,0,0,8-.58Zm-8-56H170.25l5.51-22.06a8,8,0,0,0-15.52-3.88L153.75,152H136V128a8,8,0,0,0-16,0v24H102.25l-6.49-25.94a8,8,0,1,0-15.52,3.88L85.75,152H72a40,40,0,0,1,0-80l.58,0A55.21,55.21,0,0,0,72,80a8,8,0,0,0,16,0,40,40,0,0,1,80,0,8,8,0,0,0,16,0,55.21,55.21,0,0,0-.58-8l.58,0a40,40,0,0,1,0,80Z"
+              ></path>
+            </svg>
+            <h3 class="food-image-text">Chinese</h3>
+          </div>
+          <a href="https://www.example.com" class="image-link">
+            <img
+              src="/chinese-image.jpg"
+              alt="Chinese"
+              class="cuisine-image-china"
+            />
+          </a>
+        </tit1>
+
+        <tit1 class="food-image-title-arabian">
+          <div class="arabian-title">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M240,112a56.06,56.06,0,0,0-56-56c-1.77,0-3.54.1-5.29.26a56,56,0,0,0-101.42,0C75.54,56.1,73.77,56,72,56A56,56,0,0,0,48,162.59V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V162.59A56.09,56.09,0,0,0,240,112Zm-48,96H64V167.42a55.49,55.49,0,0,0,8,.58H184a55.49,55.49,0,0,0,8-.58Zm-8-56H170.25l5.51-22.06a8,8,0,0,0-15.52-3.88L153.75,152H136V128a8,8,0,0,0-16,0v24H102.25l-6.49-25.94a8,8,0,1,0-15.52,3.88L85.75,152H72a40,40,0,0,1,0-80l.58,0A55.21,55.21,0,0,0,72,80a8,8,0,0,0,16,0,40,40,0,0,1,80,0,8,8,0,0,0,16,0,55.21,55.21,0,0,0-.58-8l.58,0a40,40,0,0,1,0,80Z"
+              ></path>
+            </svg>
+            <h3 class="food-image-text">Arabian</h3>
+          </div>
+          <a href="https://www.example.com" class="image-link">
+            <img
+              src="/tandoori.webp"
+              alt="Arabic"
+              class="cuisine-image-arabian"
+            />
+          </a>
+        </tit1>
+
+        <tit1 class="food-image-title-chat">
+          <div class="chat-title">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M240,112a56.06,56.06,0,0,0-56-56c-1.77,0-3.54.1-5.29.26a56,56,0,0,0-101.42,0C75.54,56.1,73.77,56,72,56A56,56,0,0,0,48,162.59V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V162.59A56.09,56.09,0,0,0,240,112Zm-48,96H64V167.42a55.49,55.49,0,0,0,8,.58H184a55.49,55.49,0,0,0,8-.58Zm-8-56H170.25l5.51-22.06a8,8,0,0,0-15.52-3.88L153.75,152H136V128a8,8,0,0,0-16,0v24H102.25l-6.49-25.94a8,8,0,1,0-15.52,3.88L85.75,152H72a40,40,0,0,1,0-80l.58,0A55.21,55.21,0,0,0,72,80a8,8,0,0,0,16,0,40,40,0,0,1,80,0,8,8,0,0,0,16,0,55.21,55.21,0,0,0-.58-8l.58,0a40,40,0,0,1,0,80Z"
+              ></path>
+            </svg>
+            <h3 class="food-image-text">Chat-Items</h3>
+          </div>
+          <a href="https://www.example.com" class="image-link">
+            <img src="/Chat.png" alt="Chat" class="cuisine-image-chat" />
+          </a>
+        </tit1>
+
+        <tit1 class="food-image-title-juice">
+          <div class="juice-title">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M240,112a56.06,56.06,0,0,0-56-56c-1.77,0-3.54.1-5.29.26a56,56,0,0,0-101.42,0C75.54,56.1,73.77,56,72,56A56,56,0,0,0,48,162.59V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V162.59A56.09,56.09,0,0,0,240,112Zm-48,96H64V167.42a55.49,55.49,0,0,0,8,.58H184a55.49,55.49,0,0,0,8-.58Zm-8-56H170.25l5.51-22.06a8,8,0,0,0-15.52-3.88L153.75,152H136V128a8,8,0,0,0-16,0v24H102.25l-6.49-25.94a8,8,0,1,0-15.52,3.88L85.75,152H72a40,40,0,0,1,0-80l.58,0A55.21,55.21,0,0,0,72,80a8,8,0,0,0,16,0,40,40,0,0,1,80,0,8,8,0,0,0,16,0,55.21,55.21,0,0,0-.58-8l.58,0a40,40,0,0,1,0,80Z"
+              ></path>
+            </svg>
+            <h3 class="food-image-text">Fresh-Juice</h3>
+          </div>
+          <a href="https://www.example.com" class="image-link">
+            <img src="/Juice.png" alt="Juice" class="cuisine-image-juice" />
+          </a>
+        </tit1>
       </div>
-      <div>
-        <img
-          src="/full-nam-wt.png"
-          alt="Zaylicious Name"
-          height="100"
-          width="500"
-          class="Restaurant-name"
-        />
-      </div>
-    </div>
-    <div class="grid-row-2">
-      <h1 class="Save-food">Save food</h1>
-      <h3 class="Feed-text">Feed the needy</h3>
-      <h2 class="try-our-food">
-        <p>Come and indulge in the delicious flavors of our restaurant!</p>
-        <p>Try our mouthwatering dishes and experience a taste you’ll love!</p>
-      </h2>
-      <button class="Menu-button" onclick="window.open('Menu.html', '_blank');">
-        ORDER NOW
-      </button>
-    </div>
+    </section>
+
     <footer>
       Copyright © 2025-2026 Zay-Licious Restaurant. All Rights are reserved.
     </footer>
