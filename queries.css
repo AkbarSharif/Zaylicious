@@ -130,10 +130,10 @@
 }
 
 /**************************/
-/* BELOW 544px (Phones) */
+/* BELOW 576px (Phones) */
 /**************************/
 
-@media (max-width: 34em) {
+@media (max-width: 36em) {
   html {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 55%;
@@ -176,10 +176,10 @@
 }
 
 /**************************/
-/* BELOW 430px (Phones) */
+/* BELOW 500px (Phones) */
 /**************************/
 
-@media (max-width: 27em) {
+@media (max-width: 31em) {
   html {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 60%;
@@ -211,5 +211,20 @@
 
   footer {
     margin-left: 9rem;
+  }
+}
+
+/**************************/
+/* BELOW 500px (Phones) */
+/**************************/
+
+@media (max-width: 27em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 60%;
+  }
+
+  .background-image {
+    width: 200vw;
   }
 }
