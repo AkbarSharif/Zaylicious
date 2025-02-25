@@ -218,13 +218,140 @@
 /* BELOW 500px (Phones) */
 /**************************/
 
-@media (max-width: 27em) {
+@media (max-width: 28em) {
   html {
     /* 8px / 16px = 0.5 = 50% */
-    font-size: 60%;
+    font-size: 55%;
+  }
+
+  .hero-content {
+    padding: 0 2rem;
+  }
+
+  .hero-section {
+    padding: 6rem 0;
+  }
+
+  .Menu-content {
+    margin: 3rem 2rem;
+    padding: 1rem;
   }
 
   .background-image {
-    width: 200vw;
+    width: 100vw;
+  }
+
+  .container {
+    width: 48rem;
+  }
+
+  .Menu-container {
+    margin: 4rem 0.5rem;
+  }
+
+  .Restaurant-logo-img {
+    margin-top: 1rem;
+    width: 20rem;
+    height: 6rem;
+    justify-self: flex-start;
+  }
+
+  .title-nav-div {
+    display: none;
+  }
+
+  .cuisine-images-main {
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    max-width: 70%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 0.1fr;
+    grid-template-rows: repeat(5, 0.75fr);
+    /* grid-auto-flow: column; */
+    /* grid-gap: 1.2rem; */
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .food-image-title-india {
+    grid-row: 1;
+  }
+  .food-image-title-china {
+    grid-row: 2;
+    grid-column: 1/2;
+  }
+  .food-image-title-arabian {
+    grid-row: 3;
+  }
+
+  .food-image-title-chat {
+    grid-row: 4;
+    grid-column: 1/2;
+  }
+
+  .food-image-title-juice {
+    grid-row: 5;
+  }
+
+  .header-txt-h1,
+  .header-txt-h2,
+  .header-txt-h3,
+  .header-txt-p {
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(187, 187, 187, 0.3);
+  }
+
+  .header-txt-h1 {
+    font-size: 3.2rem;
+  }
+
+  .header-txt-h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+  }
+
+  .header-txt-h3 {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .header-txt-p {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .food-image-title-india,
+  .food-image-title-china,
+  .food-image-title-arabian,
+  .food-image-title-chat,
+  .food-image-title-juice {
+    gap: 1rem;
+    margin: 1rem;
+    width: 26.5rem;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.75rem 1.5rem;
+  }
+
+  .cuisine-image-india,
+  .cuisine-image-china,
+  .cuisine-image-arabian,
+  .cuisine-image-chat,
+  .cuisine-image-juice {
+    width: 14rem;
+    height: 9rem;
+    transform: scale(1.2);
+    padding-right: 1.5rem;
+    font-size: 2rem;
+    /* padding-left: 30px; */
+  }
+
+  footer {
+    margin-left: 0;
   }
 }
